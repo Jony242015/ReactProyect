@@ -1,14 +1,12 @@
 //import logo from './logo.svg';
 //import './App.css';
 
-import axios from 'axios';
-axios.get('http://localhost:8888/alumnos')
-.then((response) => { console.log(response.data);})
-.catch((error)=>{console.error(error);});
+import React from 'react';
+import Header from '../src/componentes/alumnos/layout/Header'
 
 function App (){
   return (
-    <p>Hola</p>
+    <Header/>
   );
 }
 
