@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Navigation (){
     return(
@@ -6,9 +7,9 @@ function Navigation (){
             <h2>Administración</h2>
 
             <nav class="navegacion">
-                <a href="/alumnos" class="alumnos">Alumnos</a>
-                <a href="/carreras" class="carreras">Carreras</a>
-                <a href="/calificaciones" class="calificaciones">Calificaciones</a>
+                <Link to={"/alumnos"} class="alumnos">Alumnos</Link>
+                <Link to={"/carreras"} class="carreras">Carreras</Link>
+                <Link to={"/calificaciones"} class="calificaciones">Calificaciones</Link>
             </nav>
         </aside>
         )
